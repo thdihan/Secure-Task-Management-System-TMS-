@@ -1,0 +1,41 @@
+.task-details-page {
+    background-color: #fff;
+    padding: 20px;
+}
+.task-details-page p {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.task-details-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0e2954;
+    padding-bottom: 15px;
+}
+.task-details-page textarea {
+    min-width: 100%;
+    padding: 10px;
+}
+.details-button {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.details-button button,
+.details-button a {
+    margin-right: 10px;
+}
+
+.status {
+    font-weight: 500;
+}
+.status.yellow {
+    color: #a75d03;
+}
+.status.green {
+    color: #1f6e11;
+}
+.status.red {
+    color: #bd2020;
+}

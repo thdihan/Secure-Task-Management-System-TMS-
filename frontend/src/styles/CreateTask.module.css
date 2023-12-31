@@ -1,0 +1,28 @@
+.create-task {
+    background-color: #fff;
+    padding: 20px;
+}
+.create-task h2 {
+    margin-bottom: 10px;
+}
+.task-form input,
+.task-form textarea,
+.task-form select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.task-form {
+    text-align: left;
+}
+.task-form label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.task-form input[type="submit"] {
+    border: 0;
+    background-color: #0e2954;
+    padding: 10px 20px;
+    color: #fff;
+}
