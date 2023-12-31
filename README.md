@@ -1,6 +1,6 @@
 # Secure-Task-Management-System-TMS
 
-| Porject | Task-Management-System |
+| Project | Task-Management-System |
 | ------- | ---------------------- |
 | Author  | Tanvir Hossain Dihan   |
 | Version | 2.0                    |
