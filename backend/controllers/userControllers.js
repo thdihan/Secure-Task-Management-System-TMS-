@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const User = require("../model/userModel");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 // Create a new user
 const secret = "mysecret123";
