@@ -1,13 +1,28 @@
 {
-    "name": "secure-task-management-system-tms-",
+    "name": "backend",
     "version": "1.0.0",
-    "description": "| Project | Task-Management-System | | ------- | ---------------------- | | Author  | Tanvir Hossain Dihan   | | Version | 2.0                    | | Date    | 31 December, 2023      |",
+    "description": "",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "npm install --legacy-peer-deps backend && npm install --legacy-peer-deps frontend && npm run build",
-        "start": "node backend/index.js"
+        "dev": "nodemon index.js",
+        "start": "node backend/index.js",
+        "build": "npm install && cd frontend && npm install && npm run build"
     },
+    "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "body-parser": "^1.20.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2",
+        "express-session": "^1.17.3",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.0.0",
+        "nodemon": "^3.0.1",
+        "uuid": "^9.0.1"
+    }
 }
