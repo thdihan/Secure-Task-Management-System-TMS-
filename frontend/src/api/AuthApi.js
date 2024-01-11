@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: "http://localhost:5001/auth/",
+    baseURL: "https://tms-full.onrender.com/auth/",
 });
