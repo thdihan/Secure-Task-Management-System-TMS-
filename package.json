@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "npm install backend && npm install frontend && npm run build",
+        "build": "npm install --legacy-peer-deps backend && npm install --legacy-peer-deps frontend && npm run build",
         "start": "node backend/index.js"
     },
     "author": "",
