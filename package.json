@@ -1,0 +1,13 @@
+{
+    "name": "secure-task-management-system-tms-",
+    "version": "1.0.0",
+    "description": "| Project | Task-Management-System | | ------- | ---------------------- | | Author  | Tanvir Hossain Dihan   | | Version | 2.0                    | | Date    | 31 December, 2023      |",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npm install backend && npm install frontend && npm run build",
+        "start": "node backend/index.js"
+    },
+    "author": "",
+    "license": "ISC"
+}

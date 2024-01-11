@@ -3,6 +3,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const path = require("path");
 
 dotenv.config();
 
@@ -20,6 +21,17 @@ const userRoutes = require("./routes/userRoutes");
 app.use("/auth", userRoutes);
 app.use("/", homeRoutes);
 
+const __dirname1 = path.resolve();
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname1, "/frontend/build")));
+    app.get("*", (req, res) =>
+        res.sendFile(path.resolve(__dirname1, "frontend", "dist", "index.html"))
+    );
+} else {
+    app.get("/", (req, res) => {
+        res.send("API is running");
+    });
+}
 //db connection
 mongoose
     .connect(process.env.DB_URL, {})
